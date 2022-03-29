@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     #Apps
     'perfil',
+    'usuario'
 ]
 
 MIDDLEWARE = [
@@ -53,6 +54,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'config.urls'
+
+AUTH_USER_MODEL = "usuario.UsuarioModel"
 
 TEMPLATES = [
     {

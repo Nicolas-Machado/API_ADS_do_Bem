@@ -7,7 +7,6 @@ from usuario.serializers import UsuarioSerializer, UsuarioCreateSerializer
 from rest_framework.response import Response
 from rest_framework import status
 from perfil.models import PerfilModel
-from perfil.service import UsuarioService
 
 
 class UsuarioViewSet(viewsets.ModelViewSet):

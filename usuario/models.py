@@ -10,6 +10,7 @@ class UsuarioModel(AbstractUser):
     email = models.EmailField(
         db_column="EMAIL",
         validators=[EmailValidator(message="Email incorreto!")],
+        unique=True
     )
 
     senha = models.CharField(
